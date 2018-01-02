@@ -1,0 +1,319 @@
+.clear-margin {
+  margin: 0;
+}
+
+p {
+  padding-left: 10px;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.icon-left {
+  margin-right: 5px;
+}
+.icon-right {
+  margin-left: 5px;
+}
+.labels {
+  padding-left: 8px;
+  line-height: 2;
+  
+}
+.label-keyword {
+  display: inline-block;
+  background: #2c577d;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  /*border: 1px solid #357ebd;*/
+  margin-top:5px;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
+  }
+}
+body {
+  font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333333;
+  font-size: 15px;
+}
+.text-bolder {
+  font-weight: bold;
+}
+@media only screen {
+  .container {
+    max-width: 50em;
+  }
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+  /*
+        .mobile-title {
+            display: inline-block;
+            margin-left: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+*/
+  .background-details {
+    display: block;
+  }
+  .background-details .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .icon,
+  .background-details .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .title {
+    display: none;
+  }
+  .card-nested {
+    /*padding: 5px 0;*/
+  }
+}
+.profile-card {
+  display: table;
+  width: 100%;
+}
+.profile-pic {
+  display: table-cell;
+  vertical-align: top;
+  padding: 1rem 4rem 0 0 ;
+}
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+.contact-details {
+  display: table-cell;
+}
+.contact-details .detail {
+  display: inline-block;
+ /* line-height: 2;*/
+  margin-right: 2rem;
+}
+.contact-details .detail .icon {
+  padding-right: 7px;
+  color: #888;
+}
+.contact-details .detail .info {
+  font-size: 0.9em;
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  display: block;
+}
+.social-link span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.social-link:hover,
+.social-link:focus {
+  text-decoration: none;
+}
+.social-link .fa {
+  text-align: center;
+  width: 2em;
+}
+.fa-linkedin {
+  color: #007bb6;
+}
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+
+.background-card h4 {
+  font-variant: small-caps;
+  /*color: #777777;*/
+  color: #2c577d;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+.background-card h4:not(:first-child) {
+  margin-top: 2em;
+}
+#aboutp {
+  text-align:justify;
+}
+h4 {
+  font-size:24px;
+}
+h4 > .fa,
+h4 > .title {
+  display: inline-block;
+  vertical-align: baseline;
+}
+h4 > .fa {
+  width: 4rem;
+}
+.content {
+  line-height: 1.5;
+  padding-top: 10px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  padding: 2em 3.5em;
+}
+.card-nested {
+ /* padding: 0.5rem 0 0rem 4.2rem;*/
+}
+.card-wrapper {
+  padding: 5px;
+}
+.enumeration:not(:last-child):after {
+  content: ", ";
+}
+.enumeration:last-child:after {
+  content: ".";
+}
+.icon {
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    display: block;
+  }
+  .contact-details,
+  .profile-pic {
+    display: block;
+    text-align: center;
+  }
+  .card-nested {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-details .detail {
+    display: block;
+  }
+}
+.card-skills {
+  position: relative;
+}
+.skill-info {
+  margin-left: 20px;
+}
+ .oneline {
+    padding-left:20px;
+    padding-bottom:15px;
+}
+strong {
+ color: #2c577d; 
+}
+
+@media only screen and (min-width: 768px) {
+  .skill {
+    border-left: 9px solid #555555;
+    padding-left: 1em;
+  }
+  .skill.beginner {
+    height: 50%;
+    border-color: #e74c3c;
+  }
+  .skill.intermediate {
+    height: 70%;
+    border-color: #f1c40f;
+  }
+  .skill.advanced {
+    border-color: #5cb85c;
+  }
+  .skill.master {
+    border-color: black;
+  }
+  a {
+  color: black !important;
+} 
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+@media print {
+  body {
+    font-size: 10pt;
+    background: white !important; 
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+  .background-card h4:not(:first-child) {
+    /*margin-top: 0 !important;*/
+  }
+  .card {
+    border: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .contact-details .detail .icon {
+    color: #888 !important;
+  }
+
+  .social-link{
+    display: none !important;
+  }
+  .card-nested {
+   /*padding: .5rem 0 .5rem 0;*/
+   page-break-inside: avoid;
+  }
+  .labels {
+    display: inline;
+  }
+  .skill-info {
+    margin-left: 0;
+  }
+  blockquote {
+    font-size: 100%;
+  }
+  .skill {
+    border-left: 9px solid #555555 !important;
+    padding-left: 1em;
+}
+   .card-nested.skill {
+  margin-left: 1em; 
+}
+  .oneline {
+    padding-left:20px !important;
+    padding-bottom:8px !important;
+}
+  a {
+  color: black !important;
+}
+
+
+}
+
